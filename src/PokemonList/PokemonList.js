@@ -6,7 +6,8 @@ class PokemonList extends Component {
 
     componentDidMount() {
         fetch('https://pokeapi.co/api/v2/pokemon')
-            .then(response => {console.log(response)})
+            .then(response => response.json())
+            .then(responseInJson => {console.log(responseInJson)})
     }
 
     render() {
@@ -19,4 +20,3 @@ class PokemonList extends Component {
 };
 
   export default PokemonList; 
-  
