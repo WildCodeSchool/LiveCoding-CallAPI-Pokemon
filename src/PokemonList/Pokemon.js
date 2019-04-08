@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Pokemon = () => {
+const Pokemon = props => {
     return (
         <section>
-            <p>bulbasaur</p>
+            <p>{props.name}</p>
         </section>
     );
 };

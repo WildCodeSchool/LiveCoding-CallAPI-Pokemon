@@ -10,3 +10,4 @@ Create a list of Pokemon with the data from 'PokeAPI'
 2. In PokemonList, I use _then_ to specify what function should be executed when the browser receive the PokeApi response. We use the json() response method to make it an object.
 3. In PokemonList, I create a **State** with an attribute pokemons with the value _[ ]_ by default.  
    In my API call I change the value of pokemons with **setState** after I got my JSON response. I log _this.state.pokemons_ in render or I use react inspector to see state change.
+4. I create a list with **.map()** on my array **pokemons** from state, and I use props to get my pokemon name in the component Pokemon.
